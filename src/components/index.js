@@ -1,2 +1,3 @@
 import Header from "./Header";
-export default {Header};
+import Sidebar from "./Sidebar";
+export {Header,Sidebar}

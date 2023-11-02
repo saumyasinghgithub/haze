@@ -1,11 +1,19 @@
-import React from 'react'
+import React from "react";
+import { Header, Sidebar } from "../components";
+import { Container, Row } from "react-bootstrap";
 
-const DefaultLayout = () => {
+const DefaultLayout = ({ children }) => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <>
+      <Header />
+      <Container fluid >
+        <Row className="rowWrapper">
+          <Sidebar />
+          {children}
+        </Row>
+      </Container>
+    </>
+  );
+};
 
-export default DefaultLayout
+export default DefaultLayout;
